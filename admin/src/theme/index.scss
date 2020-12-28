@@ -1,0 +1,17 @@
+$--primary--color: rgb(15, 37, 238);
+
+@mixin border-radius($radiu){
+    border-radius: $radiu;
+}
+
+body {
+    color: $--primary--color;
+    box-sizing: border-box;
+    @include border-radius(5px)
+}
+.autoplacement-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
